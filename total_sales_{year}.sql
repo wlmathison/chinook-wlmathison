@@ -1,0 +1,6 @@
+SELECT(SELECT SUM(Total) 
+FROM Invoice 
+WHERE InvoiceDate BETWEEN '2009-01-01 00:00:00' AND '2009-12-31 00:00:00') AS '2009 Total Sales', 
+(SELECT SUM(Total) 
+FROM Invoice 
+WHERE InvoiceDate BETWEEN '2011-01-01 00:00:00' AND '2011-12-31 00:00:00') AS '2011 Total Sales'
